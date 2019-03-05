@@ -80,13 +80,17 @@ public class Gui extends JPanel {
 
 
         JPanel jPanel = new JPanel();
+        jPanel.setBackground(new Color(0xdddddd));
         //szwe, wyxz
-        jPanel.setPreferredSize(new Dimension(100,10));
+        jPanel.setPreferredSize(new Dimension(200,290));
 
+
+        jPanel.setLayout(new BoxLayout(jPanel,
+                BoxLayout.Y_AXIS));
 
         //add a button.
         JButton resetOnButton = new JButton("Reset ON");
-        resetOnButton.setBounds(0,0,20,30);
+       // resetOnButton.setBounds(0,0,40,30);
 
         //add button to the frame.
         jPanel.add(resetOnButton, BorderLayout.WEST);
@@ -107,9 +111,16 @@ public class Gui extends JPanel {
         jPanel.add(readSignatureButton, BorderLayout.SOUTH);
 
         JLabel label1 = new JLabel("Created by Adam Dybkowski '1999-2011");
-        //label1.setBounds(50, 50, 20, 30);
+        JTextArea jtA = new JTextArea("Created by Adam Dybkowski '1999-2011");
 
-        jPanel.add(label1);
+        //label1.setBounds(50, 50, 20, 30);
+        label1.setForeground(Color.BLUE);
+        jtA.setForeground(Color.BLUE);
+        jtA.setLineWrap(true);
+        jtA.setBackground(Color.lightGray);
+        //label1.set
+
+        jPanel.add(jtA);
 
 
         //add a button.
@@ -117,17 +128,36 @@ public class Gui extends JPanel {
         //add button to the frame.
         jPanel.add(eraseButton, BorderLayout.SOUTH);
 
+        JSeparator sep = new JSeparator(SwingConstants.HORIZONTAL/*JSeparator.HORIZONTAL*/);
+
+        //sep.setPreferredSize(new Dimension(0,50));
+
+        jPanel.add(sep
+        //        ,BorderLayout.LINE_START
+        );
+
         //add a button.
         JButton setupButton = new JButton("Setup");
         //add button to the frame.
         jPanel.add(setupButton, BorderLayout.SOUTH);
 
-
-
+        //...
+////Where the GUI is constructed:
+        JProgressBar progressBar = new JProgressBar();
+        progressBar.setMaximum(100);
+        progressBar.setMinimum(0);
+        progressBar.setValue(58);
+        progressBar.setString("ooiioo");
+        progressBar.setStringPainted(true);
+        progressBar.setOrientation(JProgressBar.HORIZONTAL);
 
         isppcFrame.getContentPane().add(jPanel, BorderLayout.WEST);
+        isppcFrame.getContentPane().add(progressBar, BorderLayout.SOUTH);
         //setBorder(BorderFactory.createEtchedBorder());
         setLayout(new BorderLayout());
+
+
+        //jPanel.add(progressBar);
 
         resetOffButton.addActionListener(new ActionListener() {
 
@@ -138,17 +168,13 @@ public class Gui extends JPanel {
             }
         });
 
-
         isppcFrame.setVisible(true);
-
 
         String vers = System.getProperty("java.version");
         if (vers.compareTo("1.1.2") < 0) {
             System.out.println("!!!WARNING: Swing components require a "
                     + "1.1.2 or higher version VM!!!");
         }
-
-
 
         System.out.println("tst");
 
