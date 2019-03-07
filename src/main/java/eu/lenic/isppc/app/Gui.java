@@ -72,12 +72,9 @@ public class Gui extends JPanel {
 
        // label1.
 
-
-
         //isppcFrame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         isppcFrame.getContentPane().setBackground(Color.lightGray);
         // isppcFrame.getContentPane().setLayout(new BorderLayout());
-
 
         JPanel jPanel = new JPanel();
         jPanel.setBackground(new Color(0xdddddd));
@@ -98,7 +95,7 @@ public class Gui extends JPanel {
         //add a button.
         JButton resetOffButton = new JButton("Reset OFF");
         //add button to the frame.
-        jPanel.add(resetOffButton, BorderLayout.SOUTH);
+        jPanel.add(resetOffButton, BorderLayout.CENTER);
 
         //add a button.
         JButton restartButton = new JButton("Restart");
@@ -108,7 +105,7 @@ public class Gui extends JPanel {
         //add a button.
         JButton readSignatureButton = new JButton("Read signature");
         //add button to the frame.
-        jPanel.add(readSignatureButton, BorderLayout.SOUTH);
+        jPanel.add(readSignatureButton, BorderLayout.CENTER);
 
         JLabel label1 = new JLabel("Created by Adam Dybkowski '1999-2011");
         JTextArea jtA = new JTextArea("Created by Adam Dybkowski '1999-2011");
