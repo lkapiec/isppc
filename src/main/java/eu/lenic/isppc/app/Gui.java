@@ -36,9 +36,9 @@ import javax.swing.JFrame;
 public class Gui extends JPanel {
 
     public GraphicsConfiguration gc;
+    private JFrame isppcFrame;
 
     public Gui(String...args) {
-
 
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -52,9 +52,15 @@ public class Gui extends JPanel {
             e.printStackTrace();
         }
 
-        JFrame isppcFrame;
-
         isppcFrame = new JFrame();
+
+        isppcFrame.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosed(java.awt.event.WindowEvent windowEvent) {
+                System.out.println("Zamkniecie aplikacji");
+                System.exit(0);
+            }
+        });
 
     //    isppcFrame.getContentPane().add("St", this);
 
@@ -72,7 +78,7 @@ public class Gui extends JPanel {
 
        // label1.
 
-        //isppcFrame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+        isppcFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         isppcFrame.getContentPane().setBackground(Color.lightGray);
         // isppcFrame.getContentPane().setLayout(new BorderLayout());
 
