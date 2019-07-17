@@ -1,4 +1,4 @@
-package eu.lenic.isppc.app;
+package eu.lenic.isppc;
 
 public class Delays {
 

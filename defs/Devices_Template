@@ -1,0 +1,31 @@
+{
+  "Familly":
+  [
+    {
+      "name": "Unitname",
+      "signature": [
+        "$ff",
+        "$ff",
+        "$ff"
+      ],
+      "proctype": "PROC_TYPE_",
+      "fsize": 0,
+      "esize": 0,
+      "usigsize": 0,
+      "fpage": 0,
+      "fpagesize": 0,
+      "epage": 0,
+      "epagesize": 0,
+      "oscal": 0,
+      "algo": "ALGO_",
+      "algo_erase": "ALGO_",
+      "algo_lb": "ALGO_",
+      "algo_busy": "ALGO_BUSY_",
+      "prog_time": 5,
+      "lockbits": ["","","","","","","",""],
+      "fusebitslo": ["","","","","","","",""],
+      "fusebitshi": ["","","","","","","",""],
+      "fusebitsext": ["","","","","","","",""]
+    }
+  ]
+}
