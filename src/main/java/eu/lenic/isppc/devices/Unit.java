@@ -8,13 +8,18 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class Unit implements IUnit {
+public class Unit implements IUnit  {
 
-    public static File folder = new File("defs");
-    static String temp = "";
+    public File folder = new File("defs");
+    private String temp = "";
+    int signcount = 2;
 
+    public Unit()
+    {
+        listFilesForFolder(folder);
+    }
 
-    public static void listFilesForFolder(final File folder) {
+    public void listFilesForFolder(final File folder) {
         JSONParser parser = new JSONParser();
 
         for (final File fileEntry : folder.listFiles()) {
@@ -43,6 +48,8 @@ public class Unit implements IUnit {
                             System.out.println(iterator.next());
                         }
 
+                        this.signcount ++;
+
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -52,14 +59,26 @@ public class Unit implements IUnit {
         }
     }
 
-
     @Override
     public int findSignature(byte s0, byte s1, byte s2) {
-        return 0;
+        int result = -1;
+
+
+
+        return result;
     }
 
     @Override
     public int findName(String name) {
-        return 0;
+        int result = -1;
+
+        for(int index = 0 ; index < signcount; index++) {
+            //if (n != Device.DEVICE_LOCKED) &&(Signatures[n].name = name)
+            //{
+                result = index;
+                break;
+            //}
+        }
+        return result;
     }
 }
