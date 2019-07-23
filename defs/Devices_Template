@@ -4,11 +4,11 @@
     {
       "name": "Unitname",
       "signature": [
-        "$ff",
-        "$ff",
-        "$ff"
+        "$00",
+        "$00",
+        "$00"
       ],
-      "proctype": "PROC_TYPE_",
+      "proctype": "PROC_TYPE_NONE",
       "fsize": 0,
       "esize": 0,
       "usigsize": 0,
@@ -17,11 +17,11 @@
       "epage": 0,
       "epagesize": 0,
       "oscal": 0,
-      "algo": "ALGO_",
-      "algo_erase": "ALGO_",
-      "algo_lb": "ALGO_",
-      "algo_busy": "ALGO_BUSY_",
-      "prog_time": 5,
+      "algo": "ALGO_NONE",
+      "algo_erase": "ALGO_NONE",
+      "algo_lb": "ALGO_NONE",
+      "algo_busy": "ALGO_BUSY_NONE",
+      "prog_time": 0,
       "lockbits": ["","","","","","","",""],
       "fusebitslo": ["","","","","","","",""],
       "fusebitshi": ["","","","","","","",""],

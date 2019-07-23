@@ -13,4 +13,7 @@ public enum Device {
         this.value = value;
     }
 
+    public int getValue() {
+        return value;
+    }
 }

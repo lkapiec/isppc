@@ -2,12 +2,8 @@
   "AT24":
   [
     {
+      "signature": "a02401",
       "name": "AT24C01",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,
@@ -63,12 +59,9 @@
         ""
       ]
     },
-    {"name": "AT24C02",
-      "signature": [
-        "$a0",
-        "$24",
-        "$02"
-      ],
+    {
+      "signature": "a02402",
+      "name": "AT24C02",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 256,
@@ -124,12 +117,9 @@
         ""
       ]
     },
-    {"name": "AT24C04",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
+    {
+      "signature": "a02404",
+      "name": "AT24C04",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,
@@ -185,12 +175,9 @@
         ""
       ]
     },
-    {"name": "AT24C08",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
+    {
+      "signature": "a02408",
+      "name": "AT24C08",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,
@@ -246,12 +233,9 @@
         ""
       ]
     },
-    {"name": "AT24C16",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
+    {
+      "signature": "a02416",
+      "name": "AT24C16",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,
@@ -307,12 +291,9 @@
         ""
       ]
     },
-    {"name": "AT24C32",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
+    {
+      "signature": "a02432",
+      "name": "AT24C32",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,
@@ -368,12 +349,9 @@
         ""
       ]
     },
-    {"name": "AT24C64",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
+    {
+      "signature": "a02464",
+      "name": "AT24C64",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,
@@ -429,12 +407,9 @@
         ""
       ]
     },
-    {"name": "AT24C128",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
+    {
+      "signature": "a02428",
+      "name": "AT24C128",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,
@@ -490,12 +465,9 @@
         ""
       ]
     },
-    {"name": "AT24C256",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
+    {
+      "signature": "a02456",
+      "name": "AT24C256",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,
@@ -551,12 +523,9 @@
         ""
       ]
     },
-    {"name": "AT24C512",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
+    {
+      "signature": "a02412",
+      "name": "AT24C512",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,
@@ -612,12 +581,9 @@
         ""
       ]
     },
-    {"name": "AT24C1024",
-      "signature": [
-        "$a0",
-        "$24",
-        "$01"
-      ],
+    {
+      "signature": "a02424",
+      "name": "AT24C1024",
       "proctype": "PROC_TYPE_I2C_BUS",
       "fsize": 0,
       "esize": 128,

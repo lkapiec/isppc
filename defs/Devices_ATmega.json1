@@ -2,12 +2,8 @@
   "ATmega":
   [
     {
+      "signature": "1E9205",
       "name": "ATmega48",
-      "signature": [
-        "$1E",
-        "$92",
-        "$05"
-      ],
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -64,12 +60,8 @@
       ]
     },
     {
+      "signature": "1E920A",
       "name": "ATmega48P",
-      "signature": [
-        "$1E",
-        "$92",
-        "$0A"
-      ],
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -126,12 +118,8 @@
       ]
     },
     {
+      "signature": "1E9306",
       "name": "ATmega8515",
-      "signature": [
-        "$1E",
-        "$93",
-        "$06"
-      ],
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -188,12 +176,8 @@
       ]
     },
     {
+      "signature": "1E93$07",
       "name": "ATmega8",
-      "signature": [
-        "$1E",
-        "$93",
-        "$07"
-      ],
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -250,12 +234,8 @@
       ]
     },
     {
+      "signature": "1E9308",
       "name": "ATmega8535",
-      "signature": [
-        "$1E",
-        "$93",
-        "$08"
-      ],
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -312,12 +292,8 @@
       ]
     },
     {
+      "signature": "1E930A",
       "name": "ATmega88",
-      "signature": [
-        "$1E",
-        "$93",
-        "$0A"
-      ],
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -374,12 +350,8 @@
       ]
     },
     {
+      "signature": "$1E930F",
       "name": "ATmega88P",
-      "signature": [
-        "$1E",
-        "$93",
-        "$0F"
-      ],
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -436,12 +408,8 @@
       ]
     },
     {
+      "signature": "1E9401",
       "name": "ATmega161",
-      "signature": [
-        "$1E",
-        "$94",
-        "$01"
-      ],
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -499,11 +467,7 @@
     },
     {
       "name": "ATmega163",
-      "signature": [
-        "$1E",
-        "$94",
-        "$02"
-      ],
+      "signature": "1E9402",
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -561,11 +525,7 @@
     },
     {
       "name": "ATmega16",
-      "signature": [
-        "$1E",
-        "$94",
-        "$03"
-      ],
+      "signature": "1E9403",
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -623,11 +583,7 @@
     },
     {
       "name": "ATmega162",
-      "signature": [
-        "$1E",
-        "$94",
-        "$04"
-      ],
+      "signature": "1E9404",
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -685,11 +641,7 @@
     },
     {
       "name": "ATmega165/169",
-      "signature": [
-        "$1E",
-        "$94",
-        "$05"
-      ],
+      "signature": "1E9405",
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
@@ -747,11 +699,9 @@
     },
     {
       "name": "ATmega168",
-      "signature": [
-        "$1E",
-        "$94",
-        "$06"
-      ],
+      "signature":
+        "$1E9406"
+      ,
       "proctype": "PROC_TYPE_AVR",
       "fsize": 4096,
       "esize": 256,
