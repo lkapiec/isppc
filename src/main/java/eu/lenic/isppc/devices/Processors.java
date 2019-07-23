@@ -43,8 +43,6 @@ public class Processors implements IProcessors {
         }
     }
 
-
-
     private File folder = new File("defs");
     private List<Signatures> unitsList = new ArrayList<Signatures>();
 
@@ -80,6 +78,7 @@ public class Processors implements IProcessors {
 
         // defined as unknow unit
         desc = new Signatures.Builder().build();
+        unitsList.add(desc);
 
         //there's no need to define all valued due bulder d.p. has default values
         desc = new Signatures.Builder()

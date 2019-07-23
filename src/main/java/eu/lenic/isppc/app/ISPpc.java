@@ -28,7 +28,6 @@ public class ISPpc extends Gui {
         //Signatures sig7 = procesors.findName("AT24C1024");
         Signatures sig8 = procesors.findSignature(new byte[]{ (byte)0xa0,0x24,0x12 });
 
-
         System.out.println("Ilosc wszyskich jednostek " + procesors.size());
 
 
