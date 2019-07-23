@@ -1,7 +1,7 @@
 package eu.lenic.isppc.spi;
 
 import eu.lenic.isppc.Delays;
-import eu.lenic.isppc.ProcType;
+import eu.lenic.isppc.devices.ProcType;
 import eu.lenic.isppc.pins.Pins;
 import eu.lenic.isppc.pins.PinsIO;
 

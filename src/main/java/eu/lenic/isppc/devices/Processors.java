@@ -141,8 +141,6 @@ public class Processors implements IProcessors {
                         for (int index = 0; index < o.size(); index++) {
                             post_id = (JSONObject) o.get(index);
 
-                            System.out.print(" " +(String) post_id.get("name"));
-
                             unit = new Signatures.Builder()
                                     .setSignature(hexStringToByteArray(((String) post_id.get("signature"))))
                                     .setName((String) post_id.get("name"))
@@ -167,6 +165,9 @@ public class Processors implements IProcessors {
                                     .build();
 
                             unitsList.add(unit);
+
+                            System.out.print(unit);
+
                         }
                     } catch (FileNotFoundException e)
                     {
