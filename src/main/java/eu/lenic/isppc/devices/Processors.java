@@ -25,6 +25,26 @@ public class Processors implements IProcessors {
         }
     }
 
+    public enum Device {
+
+        DEVICE_UNKNOWN(0),
+        DEVICE_AT89Sxx(1),    // AT89S53/8252
+        DEVICE_LOCKED(2);
+
+        private int value;
+
+        private Device(int value)
+        {
+            this.value = value;
+        }
+
+        public int getValue() {
+            return value;
+        }
+    }
+
+
+
     private File folder = new File("defs");
     private List<Signatures> unitsList = new ArrayList<Signatures>();
 
@@ -57,6 +77,9 @@ public class Processors implements IProcessors {
     public Processors()
     {
         Signatures desc;
+
+        // defined as unknow unit
+        desc = new Signatures.Builder().build();
 
         //there's no need to define all valued due bulder d.p. has default values
         desc = new Signatures.Builder()

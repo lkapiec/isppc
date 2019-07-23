@@ -26,32 +26,49 @@ public class Signatures {
         this.name = builder.name;
         this.procType = builder.procType;
         this.threeByteSignature = builder.threeByteSignature;
-        this.fsize = builder.fsize;//12288;
-        this.esize = builder.esize;//2048;
-        this.usigsize = builder.usigsize;//0;
-        this.fpage = builder.fpage;//0;
-        this.fpagesize = builder.fpagesize;//0;
-        this.epage = builder.epage;//0;
-        this.epagesize = builder.epagesize;//0;
-        this.osccal = builder.osccal;//0;
-        this.algo = builder.algo;//ALGO_STD;
-        this.algo_erase = builder.algo_erase;//ALGO_ERASE_STD;
-        this.algo_lb = builder.algo_lb;//ALGO_LB_89x;
-        this.algo_busy = builder.algo_busy;//ALGO_BUSY_POLL_NMSB;
-        this.prog_time = builder.prog_time;//16;
+        this.fsize = builder.fsize;
+        this.esize = builder.esize;
+        this.usigsize = builder.usigsize;
+        this.fpage = builder.fpage;
+        this.fpagesize = builder.fpagesize;
+        this.epage = builder.epage;
+        this.epagesize = builder.epagesize;
+        this.osccal = builder.osccal;
+        this.algo = builder.algo;
+        this.algo_erase = builder.algo_erase;
+        this.algo_lb = builder.algo_lb;
+        this.algo_busy = builder.algo_busy;
+        this.prog_time = builder.prog_time;
         this.lockbits = builder.lockBits;
         this.fusebitslo = builder.fusebitslo;
         this.fusebitshi = builder.fusebitshi;
         this.fusebitsext = builder.fusebitsext;
     }
 
-    public String getName() { return this.name; }
-    public ProcType getProcType() { return this.procType; }
-    public byte[] getThreeByteSignature() { return this.threeByteSignature; }
-    public int getFsize() { return this.fsize; }
-    public byte[] getSignatures() {return threeByteSignature;}
+    public String getName() {
+        return this.name;
+    }
+
+    public ProcType getProcType() {
+        return this.procType;
+    }
+
+    public byte[] getThreeByteSignature() {
+        return this.threeByteSignature;
+    }
+
+    public int getFsize() {
+        return this.fsize;
+    }
+
+    public byte[] getSignatures() {
+        return threeByteSignature;
+    }
+
     /* */
-    public Algo getAlgo() { return this.algo; }
+    public Algo getAlgo() {
+        return this.algo;
+    }
 
     public static class Builder {
         private String name = "";
@@ -65,11 +82,11 @@ public class Signatures {
         private int epage = 0;
         private int epagesize = 0;
         private int osccal = 0;
-        private Algo algo = Algo.ALGO_NONE;//ALGO_STD;
-        private Algo algo_erase = Algo.ALGO_NONE;//ALGO_ERASE_STD;
-        private Algo algo_lb = Algo.ALGO_NONE;//ALGO_LB_89x;
-        private Algo algo_busy = Algo.ALGO_NONE;//ALGO_BUSY_POLL_NMSB;
-        private int prog_time = 0;//16;
+        private Algo algo = Algo.ALGO_NONE;
+        private Algo algo_erase = Algo.ALGO_NONE;
+        private Algo algo_lb = Algo.ALGO_NONE;
+        private Algo algo_busy = Algo.ALGO_NONE;
+        private int prog_time = 0;
         private String[] lockBits = new String[8];
         private String[] fusebitslo = new String[8];
         private String[] fusebitshi = new String[8];
@@ -104,14 +121,17 @@ public class Signatures {
             this.usigsize = size;
             return this;
         }
+
         public Builder setFPage(int size) {
             this.fpage = size;
             return this;
         }
+
         public Builder setFPagesize(int size) {
             this.fpagesize = size;
             return this;
         }
+
         public Builder setEPage(int size) {
             this.epage = size;
             return this;
@@ -166,6 +186,7 @@ public class Signatures {
             this.fusebitshi = fusebitshi;
             return this;
         }
+
         public Builder setFuseBitsExt(String fusebitsext[]) {
             this.fusebitsext = fusebitsext;
             return this;
@@ -176,7 +197,7 @@ public class Signatures {
         }
     }
 
-    //TODO - mozna by to napisac lepiej
+    //TODO description should be better :)
     @Override
     public String toString() {
         return "Unit name " + this.name + " indefied by " + new String(this.threeByteSignature);

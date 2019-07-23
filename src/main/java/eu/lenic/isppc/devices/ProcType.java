@@ -20,16 +20,6 @@ public enum ProcType {
         this.label = label;
     }
 
-    /*protected static ProcType getCodeFromName(String name) {
-        for (ProcType item : values())
-            if (item.label.equalsIgnoreCase(name))
-                return item.value;
-                //return item.
-            ProcType.valueOf("adfas");
-        return ProcType.PROC_TYPE_NONE;
-    }*/
-
-
     public static ProcType valueOfLabel(String label) {
         for (ProcType e : values()) {
             if (e.label.equals(label)) {
@@ -38,18 +28,4 @@ public enum ProcType {
         }
         return null;
     }
-
-    /*protected static String getNameFromCode(ProcType code) {
-        for (ProcType item: values())
-            if (item.value == code)
-                return item.label;
-        return "?";
-    }*/
-
-    /*protected static String getNumberFromCode(ProcType code) {
-        for (ProcType item: values())
-            if (item.value == code)
-                return item.label;
-        return "?";
-    }*/
 }
